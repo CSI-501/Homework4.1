@@ -65,6 +65,11 @@ program decrypt
 
     ! print the ~secret~ message.
     print*, message
+
+    ! Clean up the memory
+    deallocate(dat)
+    deallocate(InversionM)
+    deallocate(EncryptM)
  
  end program decrypt
 
